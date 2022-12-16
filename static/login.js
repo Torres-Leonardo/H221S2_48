@@ -21,11 +21,11 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'static')));
 
-// http://localhost:3000/
-app.get('/', function(request, response) {
-	// Render login template
-	response.sendFile(path.join(__dirname + '/login.html'));
-});
+// // http://localhost:3000/
+// app.get('/', function(request, response) {
+// 	// Render login template
+// 	response.sendFile(path.join(__dirname + '/login.html'));
+// });
 
 // http://localhost:3000/auth
 app.post('/auth', function(request, response) {
@@ -70,3 +70,4 @@ app.get('/home', function(request, response) {
 });
 
 app.listen(3000);
+
