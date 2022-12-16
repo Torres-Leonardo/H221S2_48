@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "IENSA",
   "scripts": {
-    "start": "nodemon connect.js"
+    "start": "nodemon js/connect.js"
   },
   "keywords": [],
   "author": "",
